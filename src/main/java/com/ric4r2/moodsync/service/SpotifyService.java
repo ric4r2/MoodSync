@@ -3,7 +3,8 @@ package com.ric4r2.moodsync.service;
 import org.springframework.stereotype.Service;
 import se.michaelthelin.spotify.SpotifyApi;
 import se.michaelthelin.spotify.model_objects.credentials.AuthorizationCodeCredentials;
-import se.michaelthelin.spotify.requests.authorization_code.AuthorizationCodeRequest;
+import se.michaelthelin.spotify.requests.authorization.authorization_code.AuthorizationCodeRequest;
+import se.michaelthelin.spotify.exceptions.SpotifyWebApiException;
 import java.io.IOException;
 import org.apache.hc.core5.http.ParseException;
 

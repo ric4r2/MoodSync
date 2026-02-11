@@ -1,6 +1,6 @@
 package com.ric4r2.moodsync.config;
 
-import org.springframework.beans.factory.annotation.value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import se.michaelthelin.spotify.SpotifyApi;
