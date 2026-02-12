@@ -1,6 +1,6 @@
 package com.ric4r2.moodsync.repository;
 
-import org.springframework.stereotype.Repository;
+//import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public interface TrackRepository {}
