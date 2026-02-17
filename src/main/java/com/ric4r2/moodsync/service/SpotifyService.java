@@ -31,4 +31,21 @@ public class SpotifyService {
 			return "Error exchanging code: " + e.getMessage();
 		}
 	}
+
+  public String getTopArtists() {
+    try {
+      var request = spotifyApi.getUsersTopArtists()
+              .limit(5)
+              .build();
+      var artists = request.execute();
+
+      StringBuilder response = new StringBuilder("Your top 5 artists: \n");
+      for (var artist: artists.getItems()) {
+        response.append(" - ").append(artist.getName()).append("\n");
+      }
+      return response.toString();
+    } catch (Exception e) {
+      return "Error while getting top artists: " + e.getMessage();
+    }
+  }
 }
