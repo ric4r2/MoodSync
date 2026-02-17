@@ -20,4 +20,10 @@ public class SpotifyController {
 	public String callback(@RequestParam String code) {
 		return spotifyService.exchangeCode(code);
 	}
+
+  @GetMapping("/top-artists")
+  public String getTopArtists() {
+    return spotifyService.getTopArtists();
+  }
+
 }
