@@ -12,7 +12,7 @@ public class SpotifyConfig {
 	@Value("${spotify.client.id}")
 	private String clientId;
 
-	@Value("${spotify.client.secrect}")
+	@Value("${spotify.client.secret}")
 	private String clientSecret;
 
 	@Value("${spotify.redirect.uri}")
