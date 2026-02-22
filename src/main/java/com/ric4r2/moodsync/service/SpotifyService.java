@@ -39,7 +39,7 @@ public class SpotifyService {
               .build();
       var artists = request.execute();
 
-      StringBuilder response = new StringBuilder("Your top 5 artists: \n");
+      StringBuilder response = new StringBuilder("---- MoodSync: Your Top 5 Artists --- \n");
       for (var artist: artists.getItems()) {
         response.append(" - ").append(artist.getName()).append("\n");
       }
